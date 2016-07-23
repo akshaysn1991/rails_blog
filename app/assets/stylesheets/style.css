@@ -1,0 +1,73 @@
+    html, body, .full_main {
+  height: 100%;
+}
+    body{
+  font-family: "Raleway", Arial, sans-serif;
+}
+    .sidebar_text{
+    margin-top: 30px;
+    line-height: 2;
+    }
+
+    .main
+    {
+       padding: 0px;
+      margin: 0px;
+    }
+
+   .sidebar {
+  background: #f8f8f8;
+  border-right: 2px solid #e7e7e7;
+  float: left;
+  height: 100%;
+     text-align: right;
+}
+    .sidebar_text ul{
+      list-style: none;
+    }
+    .post_wrapper{
+       padding: 0 0 0 20px;
+
+    }
+
+     .navbar-right{
+      position: relative;
+         right: 80px;
+        top: 8px;
+    }
+    .logout{
+        margin-left: 20px;
+    }
+
+
+    .sign_in{
+      position: relative;
+      bottom: -200px;
+      font-size: 11px;
+
+    }
+.comment
+{
+  padding-left: 30px;
+}
+
+.comment_name{
+      font-size: 10px;
+
+    }
+.comment_time{
+  font-size: 10px;
+}
+
+.delete{
+  position: relative;
+  right:80px;
+  bottom: 50px;
+}
+.row{
+  margin: 40px;
+}
+#page_wrapper
+{
+  padding: 20px;
+}

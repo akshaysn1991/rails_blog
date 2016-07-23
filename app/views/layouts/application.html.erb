@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+<!--      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans"> -->
+  <%#= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
+
+  <%#= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Raleway:400,700', media: 'all', 'data-turbolinks-track' => true %>
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:500,900,200' rel='stylesheet' type='text/css'>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+  <div class ="full_main">
+     <div class = 'col-md-2 sidebar' >
+
+       <div id="logo">
+         <%#= link_to root_path do %>
+            <%#= image_tag 'blog-logo', :size => '200*100' %>
+<!--          size: "16x10", alt: "Edit Entry" -->
+         <%= link_to image_tag('blog_logo.PNG', title: 'Blog', height: 100, width: 150), root_path %>
+<!--          link_to image_tag("Search.png", :border => 0, :alt => '', :title => ''), pages_search_path, :class => 'dock-item' -->
+
+         <%# end %>
+       </div>
+       <div class="sidebar_text">
+       <ul>
+         <li class="category">Website</li>
+         <li><%= link_to 'Blog', root_path %> </li>
+        <li><%= link_to 'About', about_path %></li>
+       </ul>
+       <ul>
+        <li class="category">Social</li>
+        <li><a href="https://www.github.com/akshaysn1991" target="_blank">Github</a></li>
+        <li><a href="https://rubysolutions.wordpress.com" target="_blank">Wordpress</a></li>
+       </ul>
+
+          <% if !user_signed_in? %>
+<!--          <p class="sign_in" >Admin Login </p> -->
+         <p><%= link_to('Admin Login', new_user_session_path, :class => 'sign_in')  %></p>
+         <% end %>
+       </div>
+    </div>
+    <div  class = 'col-md-10 main'>
+        <div id ="header">
+            <%= render  :partial => "shared/header" %>
+            <%#= render  :partial => "shared/sidebar" %>
+
+        </div>
+      <%= yield %>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
