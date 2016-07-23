@@ -7,5 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
- User.create! :email => 'akshaysn1991.com', :password => 'akshay123', :password_confirmation => 'akshay123'
+ User.create! :email => 'akshaysn26@gamil.com', :password => 'akshay123', :password_confirmation => 'akshay123'
 
