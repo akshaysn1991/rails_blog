@@ -5,7 +5,7 @@
     <p class="comment_time"><%= time_ago_in_words(comment.created_at) %> Ago</p>
   </div>
   <% if user_signed_in? %>
-  <p class='delete'><%= link_to 'Delete', [comment.post, comment], method: :delete, data: {conform: 'Are you sure?'}, :class => "btn btn-default btn-sm pull-right" %></p>
+    <p class='delete'><%= link_to 'Delete', [comment.post, comment], method: :delete, data: {conform: 'Are you sure?'}, :class => "btn btn-danger btn-sm pull-right" %></p>
   <% end %>
   <hr>
 </div>

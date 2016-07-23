@@ -1,19 +1,18 @@
-    html, body, .full_main {
+html, body, .full_main {
   height: 100%;
 }
-    body{
+body{
   font-family: "Raleway", Arial, sans-serif;
 }
-    .sidebar_text{
-    margin-top: 30px;
-    line-height: 2;
-    }
-
-    .main
-    {
-       padding: 0px;
-      margin: 0px;
-    }
+.sidebar_text{
+  margin-top: 30px;
+  line-height: 2;
+}
+.main
+{
+  padding: 0px;
+  margin: 0px;
+}
 
    .sidebar {
   background: #f8f8f8;
@@ -22,43 +21,35 @@
   height: 100%;
      text-align: right;
 }
-    .sidebar_text ul{
-      list-style: none;
-    }
-    .post_wrapper{
-       padding: 0 0 0 20px;
-
-    }
-
-     .navbar-right{
-      position: relative;
-         right: 80px;
-        top: 8px;
-    }
-    .logout{
-        margin-left: 20px;
-    }
-
-
-    .sign_in{
-      position: relative;
-      bottom: -200px;
-      font-size: 11px;
-
-    }
+.sidebar_text ul{
+  list-style: none;
+}
+.post_wrapper{
+  padding: 0 0 0 20px;
+}
+.navbar-right{
+  position: relative;
+  right: 80px;
+  top: 8px;
+}
+.logout{
+  margin-left: 20px;
+}
+.sign_in{
+  position: relative;
+  bottom: -200px;
+  font-size: 11px;
+}
 .comment
 {
   padding-left: 30px;
 }
-
 .comment_name{
-      font-size: 10px;
-
-    }
+  font-size: 10px;
+}
 .comment_time{
   font-size: 10px;
 }
-
 .delete{
   position: relative;
   right:80px;
@@ -70,4 +61,22 @@
 #page_wrapper
 {
   padding: 20px;
+}
+#post_title{
+  width: 600px;
+  height: 30px;
+}
+
+#post_body{
+  width: 600px;
+  height: 100px;
+}
+#comment_name{
+  width: 400px;
+  height: 30px
+}
+
+#comment_body{
+  width: 400px;
+  height: 70px
 }
