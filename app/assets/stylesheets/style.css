@@ -1,6 +1,9 @@
 html, body, .full_main {
   height: 100%;
+   margin:0;
+        padding:0;
 }
+
 body{
   font-family: "Raleway", Arial, sans-serif;
 }
@@ -58,10 +61,7 @@ body{
 .row{
   margin: 40px;
 }
-#page_wrapper
-{
-  padding: 20px;
-}
+
 #post_title{
   width: 600px;
   height: 30px;
