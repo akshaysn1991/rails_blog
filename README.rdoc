@@ -1,28 +1,37 @@
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample ruby on rails CRUD application deployed to heroku. It is available in this URL
 
-Things you may want to cover:
+akshaysampleapp.herokuapp.com/
 
-* Ruby version
+Steps to deploy rails application to heroku in simple steps
 
-* System dependencies
+step1: Edit your gemfile ie add 'pg' gem for production as follows
 
-* Configuration
+      gemfile.rb
+      ----------
 
-* Database creation
+      group :production do
+        gem 'pg'
+      end
 
-* Database initialization
+      group :development do
+        gem 'sqlite3'
+      end
 
-* How to run the test suite
+     Push all your changes to github and make sure your github branch is up-to-date
 
-* Services (job queues, cache servers, search engines, etc.)
+step2: create an account in heroku and enter the login credentials in terminal to get logged into heroku 
 
-* Deployment instructions
+      > heroku login                                 //Authentication has to be successful here
 
-* ...
+step3: create an applicaion in heroku but app name should be unique
 
+      > heroku create 'unique app name of your choice'                    //ex:  >heroku create todoapp
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+step4: push your source code to heroku from github master branch
+
+      > git push heroku master             // Here code gets deployed to heroku and gives you a URL
+
+step5: migrate the database
+
+      > heroku run rake db:migrate
